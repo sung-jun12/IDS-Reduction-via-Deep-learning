@@ -6,11 +6,14 @@ This project implements a pipeline for predicting and reducing indel (insertion�
 Input images are grayscale samples derived from the STL-10 dataset located in "data/input/". The complete IDS (i.e., insertion, deletion, and substitution) error–reduction workflow proceeds as follows:
 Input grayscale image → Byte-to-binary conversion → DNA encoding (binary-to-DNA sequence) → IDS noise injection → DNA decoding with segmentation-based indel reduction (noisy image → segmentation → indel correction) → DnCNN denoising.
 
-[References]
-[1] Ronneberger, O., Fischer, P. & Brox, T. U-Net: convolutional networks for biomedical image segmentation. In Lect. Notes Comput. Sci. 9351, 234–241 (2015).
-[2] Chen, L. C., Zhu, Y., Papandreou, G., Schroff, F. & Adam, H. Encoder–decoder with atrous separable convolution for semantic image segmentation. In Proc. Eur. Conf. Comput. Vis. 801–818 (2018).
-[3] Xie, E., Wang, W., Yu, Z., Anandkumar, A., Alvarez, J. M. & Luo, P. SegFormer: simple and efficient design for semantic segmentation with transformers. Adv. Neural Inf. Process. Syst. 34, 12077–12090 (2021).
-[4] Zhang, K., Zuo, W., Chen, Y., Meng, D. & Zhang, L. Beyond a Gaussian denoiser: residual learning of deep CNN for image denoising. IEEE Trans. Image Process. 26, 3142–3155 (2017).
+
+
+## Model Download
+
+To use the trained deep-learning models (U-Net, DeepLabv3, SegFormer, DnCNN), please download them from the following link:
+https://www.dropbox.com/scl/fo/g47xsoyl1vgwi96bo777g/AMl1EhTolVmfeVqYyydnwIA?rlkey=1r6lcohhan81nfdpbgppzic13&st=on8dzdtc&dl=0
+After downloading, **rename the folder to “models”** before use.
+
 
 
 ## Install Requirements
